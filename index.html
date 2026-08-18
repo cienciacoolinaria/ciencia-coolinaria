@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ciencia COOLinaria® | Del tubo de ensayo al tenedor</title>
+<meta name="description" content="Ciencia COOLinaria®: ciencia, cocina, nutrición y alimentos a través de experiencias de indagación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--r:#F86B40;--n:#101F33;--a:#1963CC;--w:#fff;--p:#F6D6D1;--g:#F7F8FA;--l:#DDE3EA}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Lato,Arial,sans-serif;color:var(--n);line-height:1.55}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}.section{padding:84px 0}.kicker{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--a);font-weight:900;margin-bottom:10px}h1,h2,h3{line-height:1.07;margin:0 0 16px}h1{font-size:clamp(3.2rem,7vw,6.6rem);font-weight:300;letter-spacing:-.045em}h2{font-size:clamp(2.05rem,4vw,3.65rem);font-weight:900;letter-spacing:-.035em}h3{font-size:1.12rem}p{margin:0 0 17px}.lead{font-size:1.17rem;color:#4a576d;max-width:800px}sup{font-size:.48em;position:relative;top:-.62em}.btn{display:inline-flex;padding:13px 21px;border-radius:999px;font-weight:900;transition:.2s}.btn:hover{transform:translateY(-2px)}.red{background:var(--r);color:white}.blue{background:var(--a);color:white}.white{background:white;color:var(--n)}
+nav{position:fixed;inset:0 0 auto;background:rgba(255,255,255,.97);border-bottom:1px solid #e7eaf0;z-index:80;backdrop-filter:blur(10px)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo-wrap{position:relative;display:inline-block}.logo-wrap img{width:226px;height:72px;object-fit:contain}.logo-wrap .regmark{position:absolute;right:-11px;top:12px;font-size:.7rem;font-weight:900;color:var(--n)}.navlinks{display:flex;gap:18px;font-weight:900;font-size:.87rem;align-items:center}.navlinks a:hover{color:var(--r)}.menu{display:none;background:none;border:0;font-size:1.8rem;color:var(--n)}
+.hero{padding:122px 0 62px;background:linear-gradient(90deg,#fff 0 52%,var(--n) 52%);min-height:86vh}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}.hero h1 strong{color:var(--r);font-weight:900}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.brand-chip{display:inline-block;background:var(--r);color:white;border-radius:999px;padding:8px 13px;font-weight:900;margin-bottom:16px}.icon-panel{border-radius:28px;overflow:hidden;box-shadow:0 22px 50px rgba(16,31,51,.22)}.icon-panel img{width:100%;height:530px;object-fit:cover}.band{background:var(--r);color:white;padding:18px 0}.band .container{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;font-weight:900}.band span:before{content:"+";color:var(--n);margin-right:7px}
+.project-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.pattern{height:460px;border-radius:28px;background:url("assets/marca/trama.png") center/cover;box-shadow:0 16px 38px rgba(16,31,51,.12)}.quote{border-left:7px solid var(--r);padding-left:22px;font-size:1.55rem;margin-top:28px}.quote strong{color:var(--a)}
+.method{background:var(--n);color:white}.method .lead{color:#d7e0eb}.method .kicker{color:white}.method-grid{display:grid;grid-template-columns:285px 1fr;gap:42px;margin-top:34px}.steps{display:flex;flex-direction:column;gap:15px}.step{display:grid;grid-template-columns:48px 1fr;gap:14px}.ico{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--r);font-weight:900;font-size:1.2rem}.step:nth-child(even) .ico{background:var(--a)}.step p{font-size:.92rem;color:#cbd6e3}.labs{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.lab{background:#fff;color:var(--n);border-radius:16px;padding:16px;display:flex;gap:12px;min-height:108px;transition:.2s}.lab:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.17)}.num{flex:0 0 37px;height:37px;border-radius:50%;background:var(--a);color:white;display:grid;place-items:center;font-weight:900}.lab h3{font-size:.98rem;margin-bottom:8px}.lab small{color:var(--r);font-weight:900}
+.prev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}.prev{border:1px solid var(--l);border-left:7px solid var(--a);border-radius:19px;padding:23px}.prev:nth-child(even){border-left-color:var(--r)}.prev small{color:var(--r);font-weight:900;text-transform:uppercase;letter-spacing:.08em}.prev a{color:var(--a);font-weight:900}
+.news{background:var(--g)}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px;margin-top:32px}.card{background:white;border-radius:20px;border:1px solid var(--l);overflow:hidden;display:flex;flex-direction:column}.cover{height:145px;background:url("assets/marca/trama.png") center/cover}.card:nth-child(even) .cover{background:url("assets/marca/iconografia.png") center/cover}.body{padding:21px;display:flex;flex-direction:column;flex:1}.body small{color:var(--r);font-weight:900}.body a{color:var(--a);font-weight:900;margin-top:auto}
+.institutions{background:linear-gradient(135deg,#fff,var(--p))}.inst-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}.inst{background:white;border-radius:22px;padding:28px;min-height:205px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 25px rgba(16,31,51,.07)}.inst img{max-width:86%;max-height:150px;object-fit:contain}
+.team{background:var(--n);color:white}.team .lead{color:#d7e0eb}.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.person{background:white;color:var(--n);border-radius:23px;overflow:hidden;display:grid;grid-template-columns:205px 1fr}.person-photo{height:305px;background:var(--p)}.person-photo img{width:100%;height:100%;object-fit:cover}.person-info{padding:26px}.role{color:var(--r);font-size:.75rem;text-transform:uppercase;letter-spacing:.09em;font-weight:900}.person-info a{color:var(--a);font-weight:900}
+.gallery{background:white}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px}.gallery-item{border:0;padding:0;background:none;cursor:pointer;border-radius:13px;overflow:hidden;aspect-ratio:1/1}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.24s}.gallery-item:hover img{transform:scale(1.05)}.lightbox{position:fixed;inset:0;background:rgba(5,12,20,.9);display:none;place-items:center;padding:30px;z-index:150}.lightbox.open{display:grid}.lightbox img{max-width:min(1100px,92vw);max-height:88vh;border-radius:12px}.close{position:absolute;right:25px;top:20px;background:white;border:0;border-radius:50%;width:42px;height:42px;font-size:1.4rem;cursor:pointer}
+.contact{background:var(--a);color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.contact-box{background:white;color:var(--n);border-radius:23px;padding:28px}.contact-box a{display:flex;justify-content:space-between;background:#f3f5f8;border-radius:12px;padding:14px 16px;margin-bottom:10px;font-weight:900}.contact-box a:hover{background:var(--p)}
+footer{background:#071320;color:#dbe3ec;padding:40px 0 24px}.foot-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:28px}.footer-logo{position:relative;display:inline-block}.footer-logo img{width:255px}.footer-logo .regmark{position:absolute;right:-10px;top:10px;color:white;font-size:.72rem}.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:25px;padding-top:18px;font-size:.84rem}
+@media(max-width:930px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:22px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero{background:white}.hero-grid,.project-grid,.method-grid,.contact-grid{grid-template-columns:1fr}.labs{grid-template-columns:1fr 1fr}.news-grid{grid-template-columns:1fr 1fr}.team-grid,.inst-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.container{width:min(100% - 28px,1180px)}.section{padding:64px 0}.labs,.prev-grid,.news-grid{grid-template-columns:1fr}.person{grid-template-columns:1fr}.person-photo{height:350px}.gallery-grid{grid-template-columns:repeat(2,1fr)}.foot-grid{grid-template-columns:1fr}.icon-panel img{height:340px}}
+
+.student-collab{margin-top:42px;padding-top:38px;border-top:1px solid rgba(255,255,255,.16)}
+.student-collab-grid{display:block}
+.student-collab-copy{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:30px 32px;margin-bottom:24px}
+.student-collab-copy h3{font-size:1.7rem;margin-bottom:14px}
+.student-collab-copy p{color:#d9e1eb}
+.student-collab-copy strong{color:#fff}
+.student-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.student-photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+@media(max-width:900px){.student-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.student-collab-copy{padding:24px 20px}.student-photo-grid{grid-template-columns:1fr}.student-photo-grid img{aspect-ratio:4/3}}
+
+
+/* v12: colaboración estudiantil a todo el ancho */
+.student-collab{
+  width:min(1500px, calc(100vw - 40px));
+  max-width:none;
+  margin-left:50%;
+  transform:translateX(-50%);
+}
+.student-collab-copy{
+  width:100%;
+  box-sizing:border-box;
+  padding:34px 42px;
+}
+.student-photo-grid{
+  width:100%;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+}
+.student-photo-grid img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:16px;
+}
+@media(max-width:900px){
+  .student-collab{width:calc(100vw - 28px)}
+  .student-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .student-collab{width:calc(100vw - 20px)}
+  .student-collab-copy{padding:25px 22px}
+  .student-photo-grid{grid-template-columns:1fr}
+}
+
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="logo-wrap" href="#inicio"><img src="assets/brand/ciencia-coolinaria-logo-v7.jpg" alt="Ciencia COOLinaria"></a>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Menú">☰</button>
+<div class="navlinks" id="links"><a href="#proyecto">Proyecto</a><a href="#metodologia">Metodología</a><a href="#experiencias">Experiencias previas</a><a href="#noticias">Noticias</a><a href="#instituciones">Instituciones</a><a href="#equipo">Equipo</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></div>
+</div></nav>
+
+<header class="hero" id="inicio"><div class="container hero-grid">
+<div><div class="brand-chip">Ciencia + cocina + educación</div><h1>Del tubo de ensayo al <strong>tenedor</strong></h1><p class="lead">Ciencia COOLinaria<sup>®</sup> utiliza la cocina como laboratorio para despertar curiosidad, experimentar y comprender ciencia de los alimentos desde situaciones cotidianas.</p><div class="hero-actions"><a class="btn red" href="#metodologia">Ver laboratorios</a><a class="btn blue" href="#proyecto">Conocer el proyecto</a></div></div>
+<div class="icon-panel"><img src="assets/marca/iconografia.png" alt="Iconografía oficial de Ciencia COOLinaria"></div>
+</div></header>
+
+<div class="band"><div class="container"><span>Cocina y pasión</span><span>Laboratorio</span><span>Educación</span><span>Ciencia</span></div></div>
+
+<section class="section" id="proyecto"><div class="container project-grid"><div class="pattern"></div><div><div class="kicker">El proyecto</div><h2>Aprender ciencia desde lo cotidiano</h2><p class="lead">Ciencia COOLinaria<sup>®</sup> combina ciencia, nutrición, alimentos y cocina mediante experiencias de indagación desarrolladas para escolares, docentes y comunidades.</p><p>La cocina permite observar directamente transformaciones físicas, químicas y biológicas presentes en los alimentos.</p><div class="quote">Recetas simples para <strong>aprender cosas complejas.</strong></div></div></div></section>
+
+<section class="section method" id="metodologia"><div class="container"><div class="kicker">Metodología indagatoria</div><h2>Preguntar · experimentar · analizar · descubrir</h2><p class="lead">Los nueve laboratorios audiovisuales están reunidos en la playlist oficial de Ciencia COOLinaria<sup>®</sup>.</p><div class="method-grid"><div class="steps">
+<div class="step"><div class="ico">?</div><div><h3>Preguntar</h3><p>Partimos de preguntas que nacen de la cocina y la vida cotidiana.</p></div></div>
+<div class="step"><div class="ico">⚗</div><div><h3>Experimentar</h3><p>Modificamos ingredientes, tiempo, temperatura y procedimientos.</p></div></div>
+<div class="step"><div class="ico">⌕</div><div><h3>Analizar</h3><p>Observamos, registramos y comparamos resultados.</p></div></div>
+<div class="step"><div class="ico">✦</div><div><h3>Descubrir</h3><p>Relacionamos lo observado con principios científicos.</p></div></div>
+</div><div><div class="labs"><a class="lab" href="https://www.youtube.com/watch?v=6uZRu2-5qpc&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=1&t=22s" target="_blank" rel="noopener"><span class="num">01</span><div><h3>¿Por qué las cebollas te hacen llorar?</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=3gXsSTSbXWE&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=2" target="_blank" rel="noopener"><span class="num">02</span><div><h3>¿Cómo crece el pan?</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=g2KxKYxHpkc&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=3" target="_blank" rel="noopener"><span class="num">03</span><div><h3>Claras de huevo</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=aDzxEkGhYfQ&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=4" target="_blank" rel="noopener"><span class="num">04</span><div><h3>Haz tu propia mayonesa</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=Lyc5rn-O3j0&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=5" target="_blank" rel="noopener"><span class="num">05</span><div><h3>Azúcar en bebidas de fantasía</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=Yaie1ma6-2Y&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=6" target="_blank" rel="noopener"><span class="num">06</span><div><h3>Tiempo de cocción del huevo</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=uDzoTn8GBLU&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=7" target="_blank" rel="noopener"><span class="num">07</span><div><h3>¿Qué es la fibra dietética?</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=ghFSG3mUyrE&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=8" target="_blank" rel="noopener"><span class="num">08</span><div><h3>Pigmentando alimentos</h3><small>Ver laboratorio en YouTube ↗</small></div></a>
+<a class="lab" href="https://www.youtube.com/watch?v=HG6xlXYxXoM&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY&index=9" target="_blank" rel="noopener"><span class="num">09</span><div><h3>Pardeamiento de frutas</h3><small>Ver laboratorio en YouTube ↗</small></div></a></div><p style="margin-top:18px"><a class="btn red" href="https://www.youtube.com/playlist?app=desktop&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY" target="_blank">▶ Abrir playlist completa</a></p></div></div></div></section>
+
+<section class="section" id="experiencias"><div class="container"><div class="kicker">Experiencias previas</div><h2>De la universidad a escuelas y comunidades</h2><div class="prev-grid">
+<article class="prev"><small>Universidad de Chile</small><h3>Proyecto de Extensión · Facultad de Medicina</h3><p>Inicio y desarrollo del proyecto mediante extensión universitaria.</p><a target="_blank" href="https://www.cooperativaciencia.cl/ciencia/2024/03/21/investigadores-ensenan-ciencia-a-traves-de-la-cocina/">Ver antecedente →</a></article>
+<article class="prev"><small>Explora</small><h3>Travesías CTCI · Explora RM Sur Oriente</h3><p>Experiencias con establecimientos escolares y actividades prácticas.</p><a target="_blank" href="https://explora.cl/rmsuroriente/travesias-ctci-resultados-de-las-postulaciones-2024/">Ver experiencia →</a></article>
+<article class="prev"><small>Penta UC</small><h3>Academia de Desarrollo de Talentos UC</h3><p>Laboratorios para escolares con interés y talento académico.</p><a target="_blank" href="https://www.uc.cl/noticias/un-espacio-para-descubrir-y-potenciar-el-talento-academico-temprano-en-la-uc/">Ver experiencia →</a></article>
+<article class="prev"><small>EdV UChile</small><h3>Escuela de Verano Universidad de Chile</h3><p>Curso Ciencia COOLinaria<sup>®</sup>: una travesía culinaria cargada de ciencia.</p><a target="_blank" href="https://www.instagram.com/p/DIw2DoByRTB/">Ver experiencia →</a></article>
+<article class="prev"><small>ICEC</small><h3>Trabajo con docentes y escolares</h3><p>Actividades en escuelas y laboratorios universitarios.</p><a target="_blank" href="https://www.ie.uchile.cl/vinculacion/noticias/ciencia-coolinaria-el-proyecto-que-permite-entender-fenomenos-cientificos-a-partir-de-elementos-de-la-cocina">Leer noticia →</a></article>
+<article class="prev"><small>2026–2027</small><h3>Clubes de barrio</h3><p>Nueva etapa de extensión vinculada con ciencia, alimentación y bienestar.</p><a target="_blank" href="https://medicina.uchile.cl/noticias/237444/facultad-de-medicina-anuncia-a-los-ganadores-de-fondos-de-extension-2025">Conocer proyecto →</a></article>
+</div></div></section>
+
+<section class="section news" id="noticias"><div class="container"><div class="kicker">Noticias y medios</div><h2>Ciencia COOLinaria<sup>®</sup> en medios institucionales</h2><p class="lead">Selección basada en los antecedentes documentales aportados para el registro de la marca.</p><div class="news-grid">
+<article class="card"><div class="cover"></div><div class="body"><small>UC · Academia en los medios</small><h3>Enseñar ciencia a través de la cocina</h3><p>Artículo dedicado a la propuesta educativa de Ciencia COOLinaria<sup>®</sup>.</p><a target="_blank" href="https://www.uc.cl/academia-en-los-medios/ensenar-ciencia-a-traves-de-la-cocina/">Leer noticia →</a></div></article>
+<article class="card"><div class="cover"></div><div class="body"><small>Facultad de Medicina UC</small><h3>Laboratorio que mezcla ciencia y cocina</h3><p>Actividad de Nutrición UC vinculada con la metodología del proyecto.</p><a target="_blank" href="https://facultadmedicina.uc.cl/noticias/ciencia-coolinaria-nutricion-uc-realiza-laboratorio-que-mezcla-entre-ciencia-y-cocina/">Leer noticia →</a></div></article>
+<article class="card"><div class="cover"></div><div class="body"><small>Academia de Talentos UC</small><h3>Ciencia COOLinaria<sup>®</sup> en Penta UC</h3><p>Registro fotográfico y difusión del curso en la Academia de Desarrollo de Talentos UC.</p><a target="_blank" href="https://www.facebook.com/academiatalentosuc/posts/1380070953441104/">Ver publicación →</a></div></article>
+<article class="card"><div class="cover"></div><div class="body"><small>Universidad Católica</small><h3>Un espacio para descubrir y potenciar el talento académico temprano</h3><p>Nota institucional sobre la experiencia de la Academia de Talentos.</p><a target="_blank" href="https://www.uc.cl/noticias/un-espacio-para-descubrir-y-potenciar-el-talento-academico-temprano-en-la-uc/">Leer noticia →</a></div></article>
+<article class="card"><div class="cover"></div><div class="body"><small>Facultad de Medicina UChile</small><h3>Ganadores de Fondos de Extensión 2025</h3><p>Nueva etapa de Ciencia COOLinaria<sup>®</sup> para el bienestar en clubes de barrio.</p><a target="_blank" href="https://medicina.uchile.cl/noticias/237444/facultad-de-medicina-anuncia-a-los-ganadores-de-fondos-de-extension-2025">Leer noticia →</a></div></article>
+<article class="card"><div class="cover"></div><div class="body"><small>Siembra Abierta · UChile</small><h3>Ficha institucional de la iniciativa</h3><p>Registro de Ciencia COOLinaria<sup>®</sup> en la plataforma de iniciativas de la Universidad de Chile.</p><a target="_blank" href="https://siembraabierta.uchile.cl/initiatives/143270">Ver ficha →</a></div></article>
+</div></div></section>
+
+<section class="section institutions" id="instituciones"><div class="container"><div class="kicker">Instituciones colaboradoras</div><h2>Colaboración universitaria</h2><div class="inst-grid">
+<div class="inst"><img src="assets/instituciones/facultad-medicina-uchile.png" alt="Facultad de Medicina Universidad de Chile"></div>
+<div class="inst"><img src="assets/instituciones/logo-uc.png" alt="Pontificia Universidad Católica de Chile"></div>
+</div></div></section>
+
+<section class="section team" id="equipo"><div class="container"><div class="kicker" style="color:#fff">Equipo docente</div><h2>Quienes impulsan Ciencia COOLinaria<sup>®</sup></h2><div class="team-grid">
+<article class="person"><div class="person-photo"><img src="assets/equipo/francisca-echeverria.jpg" alt="Francisca Echeverría González"></div><div class="person-info"><div class="role">Equipo docente</div><h3>Francisca Echeverría González</h3><p>Profesora Asistente, Departamento de Nutrición y Dietética, Escuela de Ciencias de la Salud, Pontificia Universidad Católica de Chile.</p><a target="_blank" href="https://nutricion.uc.cl/persona/nut-francisca-echeverria-gonzalez-msc-phd/">Ver perfil académico UC →</a></div></article>
+<article class="person"><div class="person-photo"><img src="assets/equipo/andres-bustamante.jpg" alt="Andrés Bustamante Pezoa"></div><div class="person-info"><div class="role">Equipo docente</div><h3>Andrés Bustamante Pezoa</h3><p>Profesor Asistente, Departamento de Nutrición, Facultad de Medicina, Universidad de Chile.</p><a target="_blank" href="https://portafolio-academico.uchile.cl/perfil/22688-Andres-Ignacio-Bustamante-Pezoa">Ver portafolio académico UChile →</a></div></article>
+</div>
+
+<div class="student-collab">
+  <div class="student-collab-grid">
+    <div class="student-collab-copy">
+      <div class="role">Formación y colaboración interuniversitaria</div>
+      <h3>Un proyecto que se construye con estudiantes</h3>
+      <p>Ciencia COOLinaria<sup>®</sup> se desarrolla con la participación activa de <strong>estudiantes de la carrera de Nutrición y Dietética de la Pontificia Universidad Católica de Chile y de Nutrición de la Universidad de Chile</strong>, junto con <strong>estudiantes de postgrado de ambas universidades</strong>.</p>
+      <p>Su participación forma parte de un proceso formativo en el que la ciencia, la docencia y la vinculación con el medio se conectan en experiencias reales. Las y los estudiantes colaboran en la preparación de actividades, acompañan los laboratorios, dialogan con escolares y comunidades y contribuyen a transformar conceptos científicos en experiencias cercanas y comprensibles.</p>
+      <p>Esta colaboración entre universidades, carreras y niveles de formación es un componente esencial de Ciencia COOLinaria<sup>®</sup>: <strong>el proyecto funciona porque se construye colectivamente</strong>, integrando académicos, estudiantes de pregrado, estudiantes de postgrado y comunidades.</p>
+    </div>
+    <div class="student-photo-grid">
+      <img src="assets/equipo/estudiantes/equipo-estudiantes-01.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-02.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-03.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-04.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-05.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-06.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-07.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+<img src="assets/equipo/estudiantes/equipo-estudiantes-08.jpg" alt="Estudiantes de pregrado y postgrado participando en Ciencia COOLinaria®" loading="lazy">
+    </div>
+  </div>
+</div>
+
+</div></section>
+
+<section class="section gallery" id="galeria"><div class="container"><div class="kicker">Galería</div><h2>Ciencia COOLinaria<sup>®</sup> en acción</h2><p class="lead">Una selección de talleres, laboratorios y experiencias con estudiantes y comunidades.</p><div class="gallery-grid">
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-01.jpg')">
+  <img src="assets/galeria/actividad-01.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-02.jpg')">
+  <img src="assets/galeria/actividad-02.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-03.jpg')">
+  <img src="assets/galeria/actividad-03.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-04.jpg')">
+  <img src="assets/galeria/actividad-04.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-05.jpg')">
+  <img src="assets/galeria/actividad-05.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-06.jpg')">
+  <img src="assets/galeria/actividad-06.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-07.jpg')">
+  <img src="assets/galeria/actividad-07.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-08.jpg')">
+  <img src="assets/galeria/actividad-08.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-09.jpg')">
+  <img src="assets/galeria/actividad-09.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-10.jpg')">
+  <img src="assets/galeria/actividad-10.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-11.jpg')">
+  <img src="assets/galeria/actividad-11.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-12.jpg')">
+  <img src="assets/galeria/actividad-12.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-13.jpg')">
+  <img src="assets/galeria/actividad-13.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-14.jpg')">
+  <img src="assets/galeria/actividad-14.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-15.jpg')">
+  <img src="assets/galeria/actividad-15.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-16.jpg')">
+  <img src="assets/galeria/actividad-16.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-17.jpg')">
+  <img src="assets/galeria/actividad-17.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-18.jpg')">
+  <img src="assets/galeria/actividad-18.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-19.jpg')">
+  <img src="assets/galeria/actividad-19.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button>
+<button class="gallery-item" onclick="openLightbox('assets/galeria/actividad-20.jpg')">
+  <img src="assets/galeria/actividad-20.jpg" alt="Actividad de Ciencia COOLinaria®" loading="lazy">
+</button></div></div></section>
+
+<section class="section contact" id="contacto"><div class="container contact-grid"><div><div class="kicker" style="color:#fff">Contacto</div><h2>Conecta con Ciencia COOLinaria<sup>®</sup></h2><p>Para actividades, colaboraciones y nuevos laboratorios.</p></div><div class="contact-box">
+<a href="https://www.instagram.com/cienciacoolinaria/" target="_blank"><span>Instagram · @cienciacoolinaria</span><span>↗</span></a>
+<a href="mailto:cienciacoolinaria@gmail.com"><span>cienciacoolinaria@gmail.com</span><span>✉</span></a>
+<a href="https://www.youtube.com/playlist?app=desktop&list=PLig83ZfNk8SArzxPoPFOuTDAMcDc7mVUY" target="_blank"><span>YouTube · laboratorios</span><span>▶</span></a>
+</div></div></section>
+
+<footer><div class="container"><div class="foot-grid"><div><div class="footer-logo"><img src="assets/marca/logo_ciencia_coolinaria_oscuro.png" alt="Ciencia COOLinaria"><span class="regmark">®</span></div><p>Del tubo de ensayo al tenedor.</p></div><div><h3>Explora</h3><p><a href="#metodologia">Metodología</a><br><a href="#experiencias">Experiencias</a><br><a href="#noticias">Noticias</a><br><a href="#galeria">Galería</a></p></div><div><h3>Contacto</h3><p>Instagram<br>Correo<br>YouTube</p></div></div><div class="copy">© 2026 Ciencia COOLinaria<sup>®</sup>. Marca registrada.</div></div></footer>
+
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()"><button class="close" onclick="closeLightbox()">×</button><img id="lightboxImg" alt="Fotografía ampliada"></div>
+<script>
+document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('open')));
+function openLightbox(src){document.getElementById('lightboxImg').src=src;document.getElementById('lightbox').classList.add('open')}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()})
+</script>
+</body></html>
